@@ -21,6 +21,7 @@ pipeline {
         }
 
         // sonarqube 실행 후 다시 
+        // 결과이상
         stage('🧪 SonarQube Analysis') {
             steps {
                 withSonarQubeEnv("${SONARQUBE_ENV}") {
